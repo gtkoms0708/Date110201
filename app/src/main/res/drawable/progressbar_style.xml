@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--自訂ProgressBar顏色-->
+    <item android:id="@android:id/background">
+        <!--自訂ProgressBar背景顏色-->
+        <shape>
+            <corners android:radius="5dip" />
+            <gradient
+                android:startColor="#000000"
+                android:centerColor="#FFFFFF"
+                android:centerY="0.5"
+                android:endColor="#000000"
+                android:angle="270"
+                />
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <!--自訂ProgressBar執行中顏色-->
+            <shape>
+                <corners android:radius="5dip" />
+                <gradient
+                    android:startColor="#CCFF99"
+                    android:centerColor="#77FF00"
+                    android:centerY="0.68"
+                    android:endColor="#227700"
+                    android:angle="0"
+                    />
+            </shape>
+        </clip>
+    </item>
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <!--自訂ProgressBar預覽顏色-->
+            <shape>
+                <corners android:radius="5dip" />
+                <gradient
+                    android:startColor="#fed7ec"
+                    android:centerColor="#fed7ec"
+                    android:centerY="0.75"
+                    android:endColor="#fed7ec"
+                    android:angle="270"
+                    />
+            </shape>
+        </clip>
+    </item>
+</layer-list>
